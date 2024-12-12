@@ -13,7 +13,12 @@
 
         <action
             android:id="@+id/Login_to_First"
-            app:destination="@id/FirstFragment" />
+            app:destination="@+id/FirstFragment"/>
+
+        <action
+            android:id="@+id/Register_Account"
+            app:destination="@+id/Register_Account"/>
+
     </fragment>
 
     <fragment
@@ -23,7 +28,18 @@
         tools:layout="@layout/fragment_first">
 
         <action
-            android:id="@+id/action_keluar"
-            app:destination="@id/LoginFragment" />
+            android:id="@+id/Action_Keluar"
+            app:destination="@+id/LoginFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Register_Account"
+        android:name="com.irhan.kasir_mini.RegisterFragment"
+        android:label="@string/register_label"
+        tools:layout="@layout/register_screen">
+
+        <action
+            android:id="@+id/Register_Account"
+            app:destination="@+id/LoginFragment"/>
     </fragment>
 </navigation>
