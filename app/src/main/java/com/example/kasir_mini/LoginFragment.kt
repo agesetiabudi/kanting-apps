@@ -37,6 +37,9 @@ class LoginFragment : Fragment() {
 
             findNavController().navigate(R.id.Login_to_First)
         }
+        binding.ButtonToRegister.setOnClickListener{
+            findNavController().navigate(R.id.Register_Account)
+        }
     }
 
     override fun onDestroyView() {

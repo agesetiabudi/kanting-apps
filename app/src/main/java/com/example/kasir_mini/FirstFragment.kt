@@ -33,7 +33,7 @@ class FirstFragment : Fragment() {
         binding.password.setText("Kata Sandi :" + requestLogin.password)
 
         binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_keluar)
+            findNavController().navigate(R.id.Action_Keluar)
         }
     }
 
